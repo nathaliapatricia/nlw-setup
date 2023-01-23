@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #09090a;
+  color: white;
+  height: 100vh;
+  
+}
+
+header {
+
+  background-color: #09090a;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px;
+  position:fixed;
+  width: 100%;
+
+
+}
+
+button {
+  color: white;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  gap: 12px;
+
+  border: 1px solid #8b5cf6;
+  padding: 16px 24px;
+  border-radius: 8px;
+
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+}
+
+form {
+  display: flex;
+
+  padding: 182px 32px;
+}
+
+.habits {
+
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+
+    width: fit-content;
+}
+
+.habit {  
+
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.days { 
+  display: flex;
+  margin-left: 32px;
+  /*GAP = espaço entre os elementos que estão alinhados com o display:flex;*/
+  gap: 48px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.day div { 
+
+  margin-bottom: 8px;
+
+  font-family: 'Roboto Mono';
+  font-size: 16px;
+  line-height: 125%;
+  color: #A1A1AA;
+
+  text-align: center;
+}
+
+
+
+input {
+  /* o Input Checkbox tem seu estilo proprio, por isso usamos o appearance, parar retira o estilo original e adicinar o nosso proprio*/
+  appearance: none;
+  /* - = prefixo, e alguns navegadores lê somente o -webkit-appearance, por isso usamos ele. | */
+  -webkit-appearance: none;
+
+  width: 64px;
+  height: 64px;
+
+  border: 2px solid #27272A;
+  border-radius: 8px;
+
+}
+
+/*Pseudo Selector*/
+input:checked { 
+  background: #8B5CF6;
+  border: 2px solid #A78BFA;
+  border-radius: 8px;
+
+}
+
+@media (max-width: 570px) {
+  button div {
+display: none;
+  }
+
+
+
+}
